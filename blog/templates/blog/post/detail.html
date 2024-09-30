@@ -13,4 +13,9 @@
             Share this post
         </a>
     </p>
+    {% with comments.count as totlal_comments %}
+        <h2>
+            {{ totlal_comments }} comment{{ totlal_comments|pluralize }}
+        </h2>
+    {% endwith %}
 {% endblock %}
